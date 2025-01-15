@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 37.8px; /* 1 cm down */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    width: 100%;
+}
+
+/* Navbar Buttons */
+.navbar button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.navbar button:hover {
+    background-color: #444;
+}
+
+.navbar button:focus {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    margin-top: 60px; /* Space for the fixed navbar */
+    height: 100vh;
+}
+
+/* Left Menu */
+.left-menu {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    transition: width 0.3s;
+    margin-top: -37.8px; /* 1 cm up */
+}
+
+.left-menu.collapsed {
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Right Panel */
+.right-panel {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: -37.8px; /* 1 cm up */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    //position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-menu, .main-content, .right-panel {
+        width: 100%;
+    }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
