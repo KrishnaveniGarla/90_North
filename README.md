@@ -114,3 +114,16 @@ This function accepts a document or PDF file (passed as a base64-encoded string)
 - Ensure the S3 bucket exists before running the `Store Document in S3` function.
 - For the `Store Document in S3` function, use `base64` encoding for file content in the event payload.
 
+To set up and upload your project to GitHub, follow these steps:
+
+---
+
+### **Running the Code Locally**
+1. **Ensure File Organization:**
+   - Create a folder, e.g., `ResponsiveWebProject`.
+   - Place the files you uploaded (`project.html`, `script.js`) and any other associated files like `styles.css` in this folder.
+
+2. **Preview the Project:**
+   - Open the `project.html` file in a browser by double-clicking it or dragging it into a browser window.
+
+---
