@@ -19,7 +19,7 @@ This repository contains two AWS Lambda functions:
 ### Description
 This function takes two numbers (`num1` and `num2`) as input from the event and returns their sum.
 
-### File: `lambda_function_add.py`
+### File: `lambda_function.py`
 
 ### Steps to Deploy and Test
 1. **Create a Deployment Package**:
@@ -52,13 +52,12 @@ This function takes two numbers (`num1` and `num2`) as input from the event and 
      ```
 
 ---
-
 ## 2. Store Document in S3 Lambda Function
 
 ### Description
 This function accepts a document or PDF file (passed as a base64-encoded string) and uploads it to a specified S3 bucket.
 
-### File: `lambda_store_s3.py`
+### File: `lambda_store.py`
 
 ### Steps to Deploy and Test
 1. **Install Dependencies**:
