@@ -1,5 +1,3 @@
-# 90_North
-Tasks completed as part of the Software Development Engineering (Web) internship application. Demonstrates skills in web development, problem-solving, and coding best practices.
 # AWS Lambda Functions
 
 This repository contains two AWS Lambda functions:
@@ -113,8 +111,6 @@ This function accepts a document or PDF file (passed as a base64-encoded string)
 ## Notes
 - Ensure the S3 bucket exists before running the `Store Document in S3` function.
 - For the `Store Document in S3` function, use `base64` encoding for file content in the event payload.
-
-To set up and upload your project to GitHub, follow these steps:
 
 ---
 
